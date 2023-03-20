@@ -1,0 +1,162 @@
+@import "variables.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-Very-darkblue-maingBg;
+    font-family: $font-family;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 50px);
+}
+
+// Estilos para la tarjeta
+.card-section {
+    width: $width-card;
+    height: $height-card;
+    background-color: $color-Very-darkblue-cardBg;
+    border-radius: $radius-card;
+    padding: $padding-card $padding-card;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .container-image {
+        position: relative;
+        width: calc ($width-card - $radius-card);
+        height: calc ($width-card - $radius-card);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            border-radius: $radius-card;
+   
+            &:hover {
+                cursor: pointer;
+                color: $color-Cyan;
+            }
+        }
+
+        
+        .view-eye {
+            border: 3px solid white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: $radius-card;
+            background-color: $color-Cyan;
+            z-index: 3;
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+
+            .image-view {
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                z-index: 5;
+            }
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+        }
+    }
+
+
+    h2 {
+        color: $color-White;
+
+        &:hover {
+            cursor: pointer;
+            color: $color-Cyan;
+        }
+    }
+
+    p {
+        color: $color-Soft-blue;
+        font-size: calc($font-size + 3px);
+        line-height: 1.5;
+    }
+
+    .card-data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: $width-icon;
+            margin-right: 10px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        div:first-child {
+            span {
+                color: $color-Cyan;
+            }
+        }
+
+        div:last-child {
+            span {
+                color: $color-Soft-blue;
+                
+            }
+        }
+
+        hr {
+            color: $color-Soft-blue;
+        }
+    }
+
+    .card-author {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            width: $width-imgauthor;
+            height: $width-imgauthor;
+            border: 3px solid $color-White;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        p {
+            color: $color-Soft-blue;
+        }
+
+        span {
+            color: white;
+
+            &:hover {
+                cursor: pointer;
+                color: $color-Cyan;
+            }
+        }
+    }
+
+
+
+}

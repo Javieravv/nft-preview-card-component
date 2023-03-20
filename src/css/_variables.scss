@@ -1,0 +1,27 @@
+// Variables para el proyecto
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+// Colores
+$color-Very-darkblue-maingBg: hsl(217, 54%, 11%); // (main BG)
+$color-Very-darkblue-cardBg: hsl(216, 50%, 16%); //(card BG)
+$color-Very-darkblue-line: hsl(215, 32%, 27%); //(line)
+$color-White: hsl(0, 0%, 100%);
+$color-Soft-blue: hsl(215, 51%, 70%);
+$color-Cyan: hsl(178, 100%, 50%);
+
+// Fuentes
+$font-family: 'Outfit', sans-serif;
+$font-size: 18px;
+
+// Media Queries
+$media-Mobile: 375px;
+$media-Desktop: 1440px;
+
+// Para la tarjeta
+$width-card: 400px;
+$height-card: 700px;
+$radius-card: 20px;
+$padding-card: 25px;
+$width-icon: 15px;
+$height-icon: 20px;
+$width-imgauthor: 40px;
